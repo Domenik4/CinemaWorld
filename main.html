@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиноМир - Лучшие фильмы в нашем кинотеатре</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">КиноМир</a>
+                <ul class="nav-list">
+                    <li><a href="#movies">Фильмы</a></li>
+                    <li><a href="#soon">Скоро</a></li>
+                    <li><a href="#promo">Акции</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Меню">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Лучшие фильмы в кинотеатре КиноМир</h1>
+                <p>Погрузитесь в мир кино с нашими комфортными залами и отличным звуком</p>
+                <a href="#movies" class="btn">Смотреть афишу</a>
+            </div>
+        </section>
+
+        <section id="movies" class="movies">
+            <div class="container">
+                <h2>Сейчас в кино</h2>
+                <div class="movies-grid">
+                    <article class="movie-card">
+                        <img src="images/movie1.jpg" alt="Постер фильма Дюна" class="movie-poster">
+                        <div class="movie-info">
+                            <h3>Дюна: Часть вторая</h3>
+                            <p class="movie-genre">Фантастика, драма</p>
+                            <p class="movie-duration">⏱ 2ч 46м</p>
+                            <div class="movie-rating">
+                                <span class="rating-value">8.9</span>
+                                <span class="rating-icon">★</span>
+                            </div>
+                            <button class="btn btn-small">Купить билет</button>
+                        </div>
+                    </article>
+                    <!-- Еще 3 карточки фильма -->
+                </div>
+            </div>
+        </section>
+
+        <section id="soon" class="soon">
+            <div class="container">
+                <h2>Скоро на экранах</h2>
+                <ul class="soon-list">
+                    <li>
+                        <strong>15 мая:</strong> Безумные псы: Возвращение
+                    </li>
+                    <li>
+                        <strong>22 мая:</strong> Последний рубеж
+                    </li>
+                    <li>
+                        <strong>29 мая:</strong> Галактические рейнджеры
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="promo" class="promo">
+            <div class="container">
+                <h2>Специальные предложения</h2>
+                <div class="promo-cards">
+                    <div class="promo-card">
+                        <h3>Счастливые часы</h3>
+                        <p>Скидка 30% на утренние сеансы с 9:00 до 12:00</p>
+                    </div>
+                    <div class="promo-card">
+                        <h3>Семейный выходной</h3>
+                        <p>2 взрослых + 2 детских билета по специальной цене</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container">
+                <h2>Подпишитесь на рассылку</h2>
+                <p>Получайте первыми информацию о новых фильмах и специальных предложениях</p>
+                <form class="subscribe-form" id="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit" class="btn">Подписаться</button>
+                </form>
+                <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>КиноМир</h3>
+                    <p>Лучший кинотеатр вашего города</p>
+                    <p>© 2023 Все права защищены</p>
+                </div>
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <address>
+                        <p>г. Санкт-Петербург, ул. Рубенштейна, 13</p>
+                        <p>Телефон: +7 (666) 666-66-66</p>
+                        <p>Email: info@kinomir.ru</p>
+                    </address>
+                </div>
+                <div class="footer-social">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="ВКонтакте">VK</a>
+                        <a href="#" aria-label="Telegram">TG</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
